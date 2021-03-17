@@ -1,25 +1,11 @@
-## Freshdesk App Project
+## App Setup and External Events (ft. Freshdesk)
 
-Congratulations on creating your App Project! Feel free to replace this text with your project description.
+These are the resource files needed for a App Setup and External Events tutorial from Freshworks.
 
-### Project folder structure explained
+### App Setup and External Events
 
-    .
-    ├── README.md                  This file.
-    ├── config                     Installation parameter configs.
-    │   ├── iparams.json           Installation parameter config in English language.
-    │   └── iparam_test_data.json  Installation parameter data for local testing.
-    └── manifest.json              Project manifest.
-    └── server                     Business logic for remote request and event handlers.
-        ├── lib
-        │   └── handle-response.js
-        ├── server.js
-        └── test_data
-            ├── onAppInstall.json
-            ├── onAppUninstall.json
-            ├── onContactCreate.json
-            ├── onContactUpdate.json
-            ├── onConversationCreate.json
-            ├── onExternalEvent.json
-            ├── onTicketCreate.json
-            └── onTicketUpdate.json
+If you need Freshworks App to invoke a handler js function in the app on a external 3rd party event happening. We will simulate the event in course of this tutorial.
+
+## Issues?
+
+If you mind a mistake, please [file an issue]. Thanks!
