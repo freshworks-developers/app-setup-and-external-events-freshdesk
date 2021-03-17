@@ -1,13 +1,13 @@
-exports = {
+'use strict';
 
+exports = {
   events: [
-    { event: 'onTicketCreate', callback: 'onTicketCreateHandler' }
+    { event: 'onAppInstall', callback: 'onInstallHandler' },
+    { event: 'onAppUninstall', callback: 'onUninstallHandler' },
+    { event: 'onExternalEvent', callback: 'onExternalEventHandler' }
   ],
 
-  // args is a JSON block containing the payload information.
-  // args['iparam'] will contain the installation parameter values.
-  onTicketCreateHandler: function(args) {
-    console.log('Hello ' + args['data']['requester']['name']);
-  }
-  
+  onInstallHandler: function () {},
+  onUninstallHandler: function () {},
+  onExternalEventHandler: function () {}
 };
