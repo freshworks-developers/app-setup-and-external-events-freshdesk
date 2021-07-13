@@ -19,7 +19,7 @@ exports = {
 
       console.info('\n Webhook creation successful \n', webhook);
       console.info('\n Webhook Registration Successful \n', response);
-      console.info('\n Hander received following payload when app is installed \n\n', payload);
+      console.info('\n Handler received following payload when app is installed \n\n', payload);
 
       renderData();
     } catch (error) {
@@ -33,7 +33,7 @@ exports = {
       };
       const { response } = await $request.post(thirdPartyEndpoint, options);
       console.info('\n Webhook De-Registration Successful \n', response);
-      console.info('\n Hander received following payload when app is uninstalled \n\n', payload);
+      console.info('\n Handler received following payload when app is uninstalled \n\n', payload);
     } catch (error) {
       console.error('Something went wrong. Webhook De-Registration has failed', error);
     }
